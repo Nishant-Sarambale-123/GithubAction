@@ -1,10 +1,14 @@
 on:
   push:
     branches:
-          main
+         - main
 jobs:
-  - name: checkout code
-    uses:   action/checkout@v4
-
-  - name: run command
-    run: echo "ltm offer will recive today, jay shri swami smarth"
+  RUNCMD:
+    runs-on:
+      ubuntu-latest
+    steps:
+      - name: checkout code
+        uses:   actions/checkout@v4
+    
+      - name: run command
+        run: echo "ltm offer will recive today, jay shri swami smarth"
