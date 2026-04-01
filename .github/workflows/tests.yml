@@ -1,0 +1,13 @@
+on:
+  push:
+    branches:
+      main
+jobs:
+    build:
+      runs-on:
+        ubuntu-latest
+
+      steps:
+        - name: run cmd
+          run: echo "hello world"
+        
