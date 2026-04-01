@@ -1,0 +1,10 @@
+on:
+  push:
+    branches:
+          main
+jobs:
+  - name: checkout code
+    uses:   action/checkout@v4
+
+  - name: run command
+    run: echo "ltm offer will recive today, jay shri swami smarth"
